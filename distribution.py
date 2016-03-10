@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Eli Woloshin
-Credit: none
+Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 
 Assignment:
 
@@ -38,4 +38,5 @@ Notice about this example:
 """
 string = input("Please enter a string of text (the bigger the better): ").lower()
 
-print(string)
+if x in str.split(string) == ["!", ",", ".", "?", "(", ")"]
+    remove(x)
