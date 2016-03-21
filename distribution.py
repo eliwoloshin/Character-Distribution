@@ -36,7 +36,27 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-string = input("Please enter a string of text (the bigger the better): ").lower()
+import string
 
-if x in str.split(string) == ["!", ",", ".", "?", "(", ")"]
-    remove(x)
+string = input("Please enter a string of text (the bigger the better): ").lower()
+sstring = str.split(string)
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+print("The distribution of characters in "+string+ " is: ")
+table = []
+for x in alphabet:
+    number = sstring.count(x)
+    a = 0
+    b = []
+    while a < number:
+        a += 1
+        b.append(x)
+    if b != []:
+        foo = "".join(c for c in b)
+        table.append(foo)
+table.sort(reverse = True)
+for d in list(table):
+    print(d)
+    
+    
+    
+    
