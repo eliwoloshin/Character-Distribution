@@ -47,8 +47,7 @@ for x in alphabet:
     number = string.count(x)
     if number != 0:
         letter.append(x*number)
-print(letter)
-    
-    
+
+letter.sort()
     
     
