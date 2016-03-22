@@ -42,20 +42,10 @@ string = input("Please enter a string of text (the bigger the better): ").lower(
 sstring = str.split(string)
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print("The distribution of characters in "+string+ " is: ")
-table = []
 for x in alphabet:
-    number = sstring.count(x)
-    a = 0
-    b = []
-    while a < number:
-        a += 1
-        b.append(x)
-    if b != []:
-        foo = "".join(c for c in b)
-        table.append(foo)
-table.sort(reverse = True)
-for d in list(table):
-    print(d)
+    number = string.count(x)
+    if number != 0:
+        print(x*number)
     
     
     
