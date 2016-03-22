@@ -40,12 +40,14 @@ import string
 
 string = input("Please enter a string of text (the bigger the better): ").lower()
 sstring = str.split(string)
+letter = []
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print("The distribution of characters in "+string+ " is: ")
 for x in alphabet:
     number = string.count(x)
     if number != 0:
-        print(x*number)
+        letter.append(x*number)
+print(letter)
     
     
     
