@@ -7,7 +7,6 @@ Assignment:
 
 Write and submit a Python program (distribution.py) that computes and displays 
 the distribution of characters in a given sample of text.
-
 Output of your program should look like this:
 
 Please enter a string of text (the bigger the better): The rain in Spain stays mainly in the plain.
@@ -48,22 +47,8 @@ for x in alphabet:
     if number != 0:
         letter.append(x*number)
 sortnumber=[]
-x=0
-y=0
-z=""
-while x<len(letter):
-    while y<len(letter):
-        if len(letter[x])>len(z):
-            z=letter[x]
-        y=y+1
-    sortnumber.append(z)
-    letter[letter.index(z)]=""
-    z=""
-    x=x+1
-print(sortnumber)
-    
 letter.sort()
-
+    
 
 
 
