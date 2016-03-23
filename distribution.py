@@ -58,6 +58,7 @@ while x<len(letter):
         y=y+1
     sortnumber.append(z)
     letter[letter.index(z)]=""
+    z=""
     x=x+1
 print(sortnumber)
     
