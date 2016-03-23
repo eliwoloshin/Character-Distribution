@@ -51,13 +51,13 @@ sortnumber=[]
 x=0
 y=0
 z=""
-while x<len(number):
-    while y<len(number):
-        if len(number[x])>len(z):
-            z=number[x]
+while x<len(letter):
+    while y<len(letter):
+        if len(letter[x])>len(z):
+            z=letter[x]
         y=y+1
     sortnumber.append(z)
-    number[number.index(z)]=""
+    letter[letter.index(z)]=""
     x=x+1
 print(sortnumber)
     
