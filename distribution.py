@@ -47,7 +47,22 @@ for x in alphabet:
     number = string.count(x)
     if number != 0:
         letter.append(x*number)
-
+sortnumber=[]
+x=0
+y=0
+z=""
+while x<len(number):
+    while y<len(number):
+        if len(number[x])>len(z):
+            z=number[x]
+        y=y+1
+    sortnumber.append(z)
+    number[number.index(z)]=""
+    x=x+1
+print(sortnumber)
+    
 letter.sort()
-    
-    
+
+
+
+
