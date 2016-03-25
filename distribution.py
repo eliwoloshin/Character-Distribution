@@ -49,7 +49,7 @@ for x in alphabet:
 combin=list(zip(letter, alphabet))
 #print(combin)
 sortedlist = sorted(combin, key=lambda ew:(-ew[0], ew[1]))
-print(sortedlist)
+#print(sortedlist)
 z=0
 while(z<len(alphabet)):
     print(sortedlist[z][0]*sortedlist[z][1])
