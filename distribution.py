@@ -41,7 +41,7 @@ string = input("Please enter a string of text (the bigger the better): ").lower(
 sstring = str.split(string)
 letter = []
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-print("The distribution of characters in "+string+ " is: ")
+print('The distribution of characters in "'+string+ '" is: ')
 for x in alphabet:
     letter.append(string.count(x))
     
@@ -49,7 +49,7 @@ for x in alphabet:
 combin=list(zip(letter, alphabet))
 #print(combin)
 sortedlist = sorted(combin, key=lambda ew:(-ew[0], ew[1]))
-#print(sortedlist)
+print(sortedlist)
 z=0
 while(z<len(alphabet)):
     print(sortedlist[z][0]*sortedlist[z][1])
