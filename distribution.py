@@ -45,11 +45,11 @@ print("The distribution of characters in "+string+ " is: ")
 for x in alphabet:
     letter.append(string.count(x))
     
-print(letter)
+#print(letter)
 combin=list(zip(letter, alphabet))
-print(combin)
+#print(combin)
 sortedlist = sorted(combin, key=lambda jew:(-jew[0], jew[1]))
-print(sortedlist)
+#print(sortedlist)
 z=0
 while(z<len(alphabet)):
     print(sortedlist[z][0]*sortedlist[z][1])
