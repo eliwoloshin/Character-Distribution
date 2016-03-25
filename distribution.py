@@ -37,13 +37,13 @@ Notice about this example:
 """
 import string
 
-string = input("Please enter a string of text (the bigger the better): ").lower()
-sstring = str.split(string)
+string = input("Please enter a string of text (the bigger the better): ")
+sstring = string.lower()
 letter = []
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print('The distribution of characters in "'+string+ '" is: ')
 for x in alphabet:
-    letter.append(string.count(x))
+    letter.append(sstring.count(x))
     
 #print(letter)
 combin=list(zip(letter, alphabet))
