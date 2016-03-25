@@ -48,9 +48,12 @@ for x in alphabet:
 print(letter)
 combin=list(zip(letter, alphabet))
 print(combin)
-sortedlist = sorted(combin, key=lambda, jew:(-jew[0], jew[1]))
+sortedlist = sorted(combin, key=lambda jew:(-jew[0], jew[1]))
 print(sortedlist)
 letter = list(reversed(sorted(letter, key=len)))
+z=0
+while(z<len(alphabet)):
+    print(letter[z][0]*letter[z][1])
 
 
 
