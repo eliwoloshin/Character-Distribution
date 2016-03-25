@@ -50,17 +50,14 @@ combin=list(zip(letter, alphabet))
 print(combin)
 sortedlist = sorted(combin, key=lambda jew:(-jew[0], jew[1]))
 print(sortedlist)
-letter = list(reversed(sorted(letter, key=len)))
 z=0
 while(z<len(alphabet)):
-    print(letter[z][0]*letter[z][1])
+    print(sortedlist[z][0]*letter[z][1])
 
 
 
 
-z = []
-for x in letter:
-    z.append()
+
     
 
 #for x in sorted(letter, key=len, reverse=True):
