@@ -48,7 +48,8 @@ for x in alphabet:
 print(letter)
 combin=list(zip(letter, alphabet))
 print(combin)
-
+sortedlist = sorted(combin, key=lambda, jew:(-jew[0], jew[1]))
+print(sortedlist)
 letter = list(reversed(sorted(letter, key=len)))
 
 
