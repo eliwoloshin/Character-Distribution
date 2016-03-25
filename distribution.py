@@ -52,7 +52,8 @@ sortedlist = sorted(combin, key=lambda jew:(-jew[0], jew[1]))
 print(sortedlist)
 z=0
 while(z<len(alphabet)):
-    print(sortedlist[z][0]*letter[z][1])
+    print(sortedlist[z][0]*sortedlist[z][1])
+    z=z+1
 
 
 
