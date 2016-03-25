@@ -48,7 +48,7 @@ for x in alphabet:
 #print(letter)
 combin=list(zip(letter, alphabet))
 #print(combin)
-sortedlist = sorted(combin, key=lambda jew:(-jew[0], jew[1]))
+sortedlist = sorted(combin, key=lambda ew:(-ew[0], ew[1]))
 #print(sortedlist)
 z=0
 while(z<len(alphabet)):
