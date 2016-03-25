@@ -46,6 +46,8 @@ for x in alphabet:
     letter.append(string.count(x))
     
 print(letter)
+combin=zip(letter, alphabet)
+print(combin)
 
 letter = list(reversed(sorted(letter, key=len)))
 
