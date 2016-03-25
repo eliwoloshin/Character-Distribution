@@ -46,14 +46,23 @@ for x in alphabet:
     number = string.count(x)
     if number != 0:
         letter.append(x*number)
-sortnumber=[]
+print(letter)
 
-#letter = list(reversed(sorted(letter, key=len)))
+letter = list(reversed(sorted(letter, key=len)))
+
+
+
+
+z = []
+for x in letter:
+    z.append()
+    
+
 #for x in sorted(letter, key=len, reverse=True):
-    #print(x)
+   # print(x)
 #letter.sort()
 
 
-letter.sort(key=len, reverse=True)
-letter.sort()
-print(letter)
+#letter.sort(key=len, reverse=True)
+#letter.sort()
+#print(letter)
