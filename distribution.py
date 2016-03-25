@@ -43,9 +43,8 @@ letter = []
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print("The distribution of characters in "+string+ " is: ")
 for x in alphabet:
-    number = string.count(x)
-    if number != 0:
-        letter.append(x*number)
+    letter.append(string.count(x))
+    
 print(letter)
 
 letter = list(reversed(sorted(letter, key=len)))
